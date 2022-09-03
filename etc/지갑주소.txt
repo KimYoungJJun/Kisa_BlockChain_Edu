@@ -1,0 +1,25 @@
+account 1
+지갑 주소 : 0x69Eac186F238AD4e5567a17a96052B9aA5775aaD
+
+test-account
+지갑 주소 : 0x69Eac186F238AD4e5567a17a96052B9aA5775aaD
+
+account3
+0x28Aa0E0C96D2f1eFd88713C4872997772482189D
+=======================================================
+node 1: 0x7D367192dC8554118a74963928bA9b305d680295
+
+node 2: 0xc968675a604eC882370ba0d88F2529EA0e9BFaC7
+
+node 3: 0x7343FDe6eF3299ACC33BDA30217485d93318f06d
+
+node 4: 0x8Ea5472E83B69FFB4F811d547875b2983A43946A
+
+enode://ab47c6436d2ae2b0af775c03e0a6448e9944ceaea67bad3612bf2b9f5fc7eac30b43bc41f9d6865746dcd28c7afc478b64e37de78b8c9f9a959d81dc9913fb0d@127.0.0.1:30303
+
+
+besu --data-path=data --genesis-file=../genesis.json --bootnodes=enode://ab47c6436d2ae2b0af775c03e0a6448e9944ceaea67bad3612bf2b9f5fc7eac30b43bc41f9d6865746dcd28c7afc478b64e37de78b8c9f9a959d81dc9913fb0d@127.0.0.1:30303 --p2p-port=30304 --rpc-http-enabled --rpc-http-api=ETH,NET,IBFT --host-allowlist="*" --rpc-http-cors-origins="all" --rpc-http-port=8546
+
+besu --data-path=data --genesis-file=../genesis.json --bootnodes=enode://ab47c6436d2ae2b0af775c03e0a6448e9944ceaea67bad3612bf2b9f5fc7eac30b43bc41f9d6865746dcd28c7afc478b64e37de78b8c9f9a959d81dc9913fb0d@127.0.0.1:30303 --p2p-port=30305 --rpc-http-enabled --rpc-http-api=ETH,NET,IBFT --host-allowlist="*" --rpc-http-cors-origins="all" --rpc-http-port=8547
+
+besu --data-path=data --genesis-file=../genesis.json --bootnodes=enode://ab47c6436d2ae2b0af775c03e0a6448e9944ceaea67bad3612bf2b9f5fc7eac30b43bc41f9d6865746dcd28c7afc478b64e37de78b8c9f9a959d81dc9913fb0d@127.0.0.1:30303 --p2p-port=30306 --rpc-http-enabled --rpc-http-api=ETH,NET,IBFT --host-allowlist="*" --rpc-http-cors-origins="all" --rpc-http-port=8548

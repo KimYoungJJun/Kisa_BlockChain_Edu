@@ -1,0 +1,27 @@
+node0 : 0b21adbfda42ef02bcf4b5bd710b038f1ff88ef6
+node1 : 56eaae60e1c94aad495270c2418e55dc857e3ff0
+node2 : d664186fd709707c50da42d9d041548aed68bae7
+node3 : 53522e2bfdc7bc8f6f234eb00eb2ed0117610604
+node4 : 67d3b78ce68a892f7c9a7acbe468f46dcf2478b9
+
+
+geth --networkid 830 --datadir C:\Users\User\Desktop\blockchain\ethereum\node1 --ipcdisable --http --http.addr 0.0.0.0 --http.port 8545 --ws.port 8546 --http.api admin,db,eth,debug,miner,net,shh,txpool,personal,web3 --ws.api admin,db,eth,debug,miner,net,shh,txpool,personal,web3, --mine --port 30304 --nat=extip:127.0.0.1 --http.corsdomain "*" --http.vhosts "*" --allow-insecure-unlock --authrpc.port 8552 console --syncmode full
+geth --network 830 --datadir C:\Users\User\Desktop\blockchain\ethereum\node2
+geth --network 830 --datadir C:\Users\User\Desktop\blockchain\ethereum\node3
+geth --network 830 --datadir C:\Users\User\Desktop\blockchain\ethereum\node4
+geth --network 830 --datadir C:\Users\User\Desktop\blockchain\ethereum\node5
+
+
+admin.addPeer("enode://...")
+
+node1 enode
+"enode://7fd2c87883e5a327de69909a9ff47a3b0f2e77eeafe6c35f3adfd2181d901d90661c5d63d42ee1a7aac1a23f61b9e6c56bdbfc44244634dc04c83e3ec5d9461a@127.0.0.1:30304"
+
+node2 enode
+"enode://31820def0c406b336b8761bd40f25f9117870e3e674b6a168885b5b262ad116df93cc6b3098f1e54ea25ed1bcb8a1c64008977b696001be5a0038c61c94eb314@127.0.0.1:30314"
+
+node3 enode
+"enode://30d66623080c9acef76e7d1d03544aae743e9c5b99a908cffc26505c638766afc51828cb4d936839fa251555306ae33a1f1ed774a42ee1a6d8a688c4281d4e78@127.0.0.1:30324"
+
+node4 enode
+"enode://63a301f9682c5fa2c7169979eb2baf9f1e2806ba029740b4792b4e7a758671d731a56b836212319a980fb377417a9ecc132148dba97be171340ccfc56defead8@127.0.0.1:30334"
